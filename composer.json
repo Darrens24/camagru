@@ -1,0 +1,19 @@
+{
+    "name": "darrens/camagru",
+    "description": "42 project about web",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Darrens\\Camagru\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Darrens24",
+            "email": "edouard.leleux@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
