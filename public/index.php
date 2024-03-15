@@ -6,6 +6,7 @@ $route = $_SERVER['REQUEST_URI'];
 
 switch ($route) {
     case '/':
+        require '../views/template.php';
         echo 'Home';
         break;
     case '/about':
@@ -16,5 +17,3 @@ switch ($route) {
         echo 'Not Found';
         break;
 }
-
-echo 'Hello World!';
