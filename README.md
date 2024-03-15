@@ -1,12 +1,10 @@
 ## Install php
 sudo apt update
 sudo apt install php php-cli
-
 ## Install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 sudo mv composer.phar /usr/local/bin/composer
-
 ## To init project
 composer init
 
@@ -33,7 +31,7 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader'
       },
-      // Ajoute d'autres règles pour CSS, JS, etc. ici si nécessaire
+      // Other rules for JS, CSS here
     ]
   },
   plugins: [
@@ -41,7 +39,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm-bundler.js' // Utiliser la version complète de Vue
+      'vue$': 'vue/dist/vue.esm-bundler.js' // Complete version
     },
   },
 };
@@ -82,7 +80,7 @@ npm run build
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 ### in zshrc
-'export PATH=~/.npm-global/bin:$PATH' < tee ~/.zshrc
+'export PATH=~/.npm-global/bin:$PATH'
 
 
 ## Install liveserver - see doc for parameters https://www.npmjs.com/package/live-server
@@ -95,7 +93,16 @@ npm install -g @vue/cli
   "build": "vue-cli-service build",
   ...
 }
-
-### Create vue project
+## Create vue project
 vue create <project-name>
+cd <project-name>
+## Run the live server
+npm run serve -- --port 3000                                                      ─╯
 
+# Vue keymaps
+@=v-on -> listen to DOM events -> <button @click="increment">{{ count }}</button>
+:=v-bind -> bind to dynamic value
+v-model -> vbind + v-on -> get formular results
+
+## Install vue-router
+npm install vue-router
