@@ -2,23 +2,25 @@
   <div id="app">
     <NavbarApp />
     <main>
-      <p>Welcome to Camagru</p>
+      <router-view />
     </main>
     <FooterApp />
   </div>
 </template>
 
 <script>
-  import NavbarApp from './components/NavbarApp.vue'
-  import FooterApp from './components/FooterApp.vue'
+import axios from 'axios'
+import NavbarApp from './components/NavbarApp.vue'
+import FooterApp from './components/FooterApp.vue'
 
-  export default {
-    name: 'App',
-    components: {
-      NavbarApp,
-      FooterApp
-    }
+export default {
+  name: 'App',
+  components: {
+    NavbarApp,
+    FooterApp,
+    axios
   }
+}
 </script>
 
 <style>
