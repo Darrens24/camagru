@@ -106,3 +106,9 @@ v-model -> vbind + v-on -> get formular results
 
 ## Install vue-router
 npm install vue-router
+
+# For PHP
+## Install axios to make vue Ajax with php, in the Vue folder
+npm install axios
+## Install phpdotenv to import db variables
+composer require vlucas/phpdotenv
